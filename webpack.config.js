@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackRootPlugin = require("html-webpack-root-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
@@ -36,7 +37,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: "Output Management"
-    })
+      title: "Hello World"
+    }),
+    new HtmlWebpackRootPlugin()
   ]
 };
