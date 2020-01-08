@@ -9,8 +9,22 @@ class App extends React.Component {
   render() {
     const message = join(["Hello World!"], " ");
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     return (
-      <div>
+                                                            <div>
         <div className={"hello"}>{message}</div>
         <img src={icon} alt={"a desert at night"} />
         <button onClick={printMe}>Click me and check the console</button>
