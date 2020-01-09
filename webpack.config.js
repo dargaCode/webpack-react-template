@@ -40,7 +40,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: "Hello World"
+      title: "Webpack/React Hello World"
     }),
     new HtmlWebpackRootPlugin()
   ]
