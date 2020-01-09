@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "lint": "eslint src -c .eslintrc --ext js,jsx"
+    "lint": "eslint src -c .eslintrc --ext js,jsx",
+    "start": "webpack-dev-server --open"
   },
   "main": "index.js",
   "babel": {
