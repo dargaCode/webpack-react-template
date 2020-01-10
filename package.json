@@ -9,12 +9,6 @@
     "test": "jest"
   },
   "main": "index.js",
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ]
-  },
   "author": "",
   "license": "ISC",
   "keywords": [],
@@ -52,6 +46,12 @@
     "react-dom": "^16.12.0"
   },
   "description": "",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
   "jest": {
     "testMatch": [
       "**/?(*.)+(spec|test|jest).[tj]s?(x)"
