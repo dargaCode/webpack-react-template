@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "keywords": [],
+  "sideEffects": false,
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
