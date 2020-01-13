@@ -15,7 +15,9 @@
   "author": "",
   "license": "ISC",
   "keywords": [],
-  "sideEffects": false,
+  "sideEffects": [
+    "*.css"
+  ],
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
