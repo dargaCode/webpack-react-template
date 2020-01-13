@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --config webpack.prod.js",
     "lint": "eslint src -c .eslintrc --ext js,jsx",
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
     "test": "jest"
   },
   "main": "index.js",
