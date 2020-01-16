@@ -4,8 +4,11 @@
     "sourceMap": true,
     "noImplicitAny": true,
     "esModuleInterop": true,
-    "module": "commonjs",
-    "target": "es6",
-    "jsx": "react"
-  }
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "strictNullChecks": true,
+    "allowJs": false
+  },
+  "include": ["./src/"]
 }
