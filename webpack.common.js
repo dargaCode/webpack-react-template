@@ -19,7 +19,7 @@ module.exports = {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        use: { loader: "ts-loader" }
+        use: "ts-loader"
       },
       {
         test: /\.(js|jsx)$/,
@@ -31,11 +31,11 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ["file-loader"]
+        use: "file-loader"
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: ["file-loader"]
+        use: "file-loader"
       }
     ]
   },
