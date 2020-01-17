@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const HtmlWebpackRootPlugin = require("html-webpack-root-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
@@ -19,8 +20,11 @@ module.exports = {
     rules: [
       {
         test: /\.(ts|tsx|js|jsx)$/,
-        use: "ts-loader",
-        exclude: /node_modules/
+        loader: "ts-loader",
+        options: {
+          // disable type checker - we will use it in fork plugin
+          transpileOnly: true
+        }
       },
       {
         test: /\.css$/,
@@ -38,6 +42,9 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new ForkTsCheckerWebpackPlugin({
+      eslint: false
+    }),
     new HtmlWebpackPlugin({
       title: "Webpack/React Hello World"
     }),
