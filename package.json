@@ -10,7 +10,6 @@
     "predeploy": "npm run build",
     "deploy": "npx gh-pages -d dist"
   },
-  "homepage": "https://dargacode.github.io/webpack-react-boilerplate/",
   "main": "index.js",
   "author": "",
   "license": "ISC",
