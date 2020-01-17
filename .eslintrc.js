@@ -1,4 +1,4 @@
-{
+module.export = {
   "extends": ["airbnb", "prettier", "prettier/react"],
   "plugins": ["react", "prettier"],
   "rules": {
@@ -28,4 +28,4 @@
       }
     }
   }
-}
+};
