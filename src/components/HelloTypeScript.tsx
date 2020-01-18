@@ -1,4 +1,3 @@
-// import * as React from "react";
 import React from "react";
 
 interface HelloProps {
@@ -6,8 +5,6 @@ interface HelloProps {
   framework: string;
 }
 
-// 'HelloProps' describes the shape of props.
-// State is never set so we use the '{}' type.
 export default class HelloTypeScript extends React.Component<HelloProps, {}> {
   render() {
     return (
