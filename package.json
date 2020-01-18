@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "lint": "tsc --noEmit && eslint src --ext js,jsx,ts,tsx --fix",
+    "lint": "tsc --noEmit && eslint src webpack* --ext js,jsx,ts,tsx --fix",
     "start": "webpack-dev-server --config webpack.dev.js",
     "test": "jest",
     "predeploy": "npm run build",
