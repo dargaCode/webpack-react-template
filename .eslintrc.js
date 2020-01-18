@@ -18,6 +18,16 @@ module.exports = {
       {
         devDependencies: true
       }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages", // allow imports to leave off these extensions from the filenames
+      {
+        js: "never",
+        jsx: "never",
+        ts: "never",
+        tsx: "never"
+      }
     ]
   },
   parser: "@typescript-eslint/parser", // Specifies the ESLint parser
