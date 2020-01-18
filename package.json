@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "lint": "tsc --noEmit && eslint src webpack* --ext js,jsx,ts,tsx --fix",
     "start": "webpack-dev-server --config webpack.dev.js",
+    "lint": "tsc --noEmit && eslint src webpack* --ext js,jsx,ts,tsx --fix",
     "test": "jest",
     "predeploy": "npm run build",
     "deploy": "npx gh-pages -d dist"
   },
-  "main": "index.js",
+  "main": "index.tsx",
   "author": "",
   "license": "ISC",
   "keywords": [],
@@ -74,7 +74,7 @@
       "**/?(*.)+(spec|test|jest).[tj]s?(x)"
     ],
     "setupFilesAfterEnv": [
-      "<rootDir>/src/setupTests.js"
+      "<rootDir>/src/setupTests.ts"
     ]
   },
   "husky": {
