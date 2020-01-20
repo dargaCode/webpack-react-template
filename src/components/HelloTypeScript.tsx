@@ -5,12 +5,12 @@ interface HelloProps {
   framework: string;
 }
 
-export default class HelloTypeScript extends React.Component<HelloProps, {}> {
-  render() {
-    return (
-      <h2>
-        Hello from {this.props.compiler} and {this.props.framework}!
-      </h2>
-    );
-  }
+export default function HelloTypeScript(props: HelloProps) {
+  const { compiler, framework } = props;
+
+  return (
+    <h2>
+      Hello from {compiler} and {framework}!
+    </h2>
+  );
 }
