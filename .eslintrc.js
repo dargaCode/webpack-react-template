@@ -28,7 +28,12 @@ module.exports = {
         ts: "never",
         tsx: "never"
       }
-    ]
+    ],
+    "react/prop-types": [2, { skipUndeclared: false }],
+    "react/no-unused-prop-types": [2],
+    "react/forbid-prop-types": [2],
+    "react/require-default-props": [2, { forbidDefaultForRequired: true }],
+    "react/default-props-match-prop-types": [2]
   },
   parser: "@typescript-eslint/parser", // Specifies the ESLint parser
   parserOptions: {
