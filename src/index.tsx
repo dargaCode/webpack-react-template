@@ -7,12 +7,6 @@ import HelloWorld from "./components/HelloWorld";
 import HelloTypeScript from "./components/HelloTypeScript";
 
 function App() {
-  if (process.env.NODE_ENV !== "production") {
-    console.log("Looks like we are in development mode!");
-  } else {
-    console.log("wow production modeeee");
-  }
-
   return (
     <div>
       <HelloWorld />
