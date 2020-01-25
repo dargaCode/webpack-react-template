@@ -9,7 +9,7 @@ import HelloTypeScript from "./components/HelloTypeScript";
 function App() {
   return (
     <div>
-      <HelloWorld />
+      <HelloWorld descriptor="Webpack" />
       <HelloTypeScript compiler="TypeScript" framework="React" />
       <img src={icon} alt="a desert at night" />
       <div>

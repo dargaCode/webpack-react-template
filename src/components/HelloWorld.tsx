@@ -1,8 +1,14 @@
 import React from "react";
 import { join } from "lodash";
 
-export default function HelloWorld() {
-  const message = join(["Hello", "Webpack", "World!"], " ");
+interface Props {
+  descriptor: string;
+}
+
+export default function HelloWorld(props: Props) {
+  const { descriptor } = props;
+
+  const message = join(["Hello", descriptor, "World!"], " ");
 
   return (
     <div>
