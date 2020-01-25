@@ -1,11 +1,11 @@
 import React from "react";
 
-interface HelloProps {
+interface Props {
   compiler: string;
   framework: string;
 }
 
-export default function HelloTypeScript(props: HelloProps) {
+export default function HelloTypeScript(props: Props) {
   const { compiler, framework } = props;
 
   return (
