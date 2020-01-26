@@ -5,7 +5,8 @@ exports[`<HelloWorld/> should match the snapshot 1`] = `
   <div
     className="hello-world-message"
   >
-    Hello Webpack World!
+    Hello Testing World!
   </div>
+  the sum is 32!
 </div>
 `;
