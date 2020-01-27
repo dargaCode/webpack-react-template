@@ -6,8 +6,18 @@
   font-style: normal;
 }
 
+$headline-color: rgb(42, 106, 236);
+$font-stack: "HoneyFlower", serif;
+$h1-size: 65px;
+$h2-size: $h1-size / 2;
+
 .hello-world-message {
-  color: purple;
-  font-size: 65px;
-  font-family: "HoneyFlower", serif;
+  color: $headline-color;
+  font-size: $h1-size;
+  font-family: $font-stack;
+}
+
+h2 {
+  color: $headline-color;
+  font-size: $h2-size;
 }
