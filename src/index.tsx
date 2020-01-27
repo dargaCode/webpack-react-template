@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./style.css";
+import "./style.scss";
 import icon from "./icon.png";
 import printMe from "./print";
 import HelloWorld from "./components/HelloWorld";
