@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "HoneyFlower";
+  src: url(70997c87cc98b179171c43006f558863.woff2) format("woff2"), url(21fe2a39777ee35f20665fcd23717a08.woff) format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+.hello-world-message {
+  color: #2a6aec;
+  font-size: 65px;
+  font-family: "HoneyFlower", serif; }
+
+h2 {
+  color: #2a6aec;
+  font-size: 32.5px; }
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvc3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLHFCQUFxQjs7QUFFckI7QUFDQTtBQUNBO0FBQ0Esb0NBQW9DOztBQUVwQztBQUNBO0FBQ0Esb0JBQW9CIiwiZmlsZSI6ImFwcC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6IFwiSG9uZXlGbG93ZXJcIjtcbiAgc3JjOiB1cmwoNzA5OTdjODdjYzk4YjE3OTE3MWM0MzAwNmY1NTg4NjMud29mZjIpIGZvcm1hdChcIndvZmYyXCIpLCB1cmwoMjFmZTJhMzk3NzdlZTM1ZjIwNjY1ZmNkMjM3MTdhMDgud29mZikgZm9ybWF0KFwid29mZlwiKTtcbiAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgZm9udC1zdHlsZTogbm9ybWFsOyB9XG5cbi5oZWxsby13b3JsZC1tZXNzYWdlIHtcbiAgY29sb3I6ICMyYTZhZWM7XG4gIGZvbnQtc2l6ZTogNjVweDtcbiAgZm9udC1mYW1pbHk6IFwiSG9uZXlGbG93ZXJcIiwgc2VyaWY7IH1cblxuaDIge1xuICBjb2xvcjogIzJhNmFlYztcbiAgZm9udC1zaXplOiAzMi41cHg7IH1cbiJdLCJzb3VyY2VSb290IjoiIn0=*/
