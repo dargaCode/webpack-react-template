@@ -12,7 +12,6 @@ module.exports = {
   rules: {
     "prettier/prettier": "off",
     "react/jsx-filename-extension": [2, { extensions: [".jsx", ".tsx"] }], // disallow jsx in js or ts files
-    "max-len": ["error", 80],
     "import/no-extraneous-dependencies": [
       "error",
       {
