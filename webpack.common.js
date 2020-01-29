@@ -23,7 +23,7 @@ module.exports = {
         test: /\.(ts|tsx|js|jsx)$/,
         loader: "ts-loader",
         options: {
-          // disable type checker - we will use it in fork plugin
+          // disable type checker - typecheck will happen via eslint
           transpileOnly: true
         }
       },

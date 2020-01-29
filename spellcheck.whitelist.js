@@ -54,6 +54,7 @@ module.exports = [
   "transpile",
   "truthy",
   "tsx",
+  "typecheck",
   "ui",
   "unhandled",
   "unshift",
