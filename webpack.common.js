@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const HtmlWebpackRootPlugin = require("html-webpack-root-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
@@ -29,7 +30,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"]
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
@@ -49,6 +50,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Webpack/React Hello World"
     }),
-    new HtmlWebpackRootPlugin()
+    new HtmlWebpackRootPlugin(),
+    new MiniCssExtractPlugin()
   ]
 };
