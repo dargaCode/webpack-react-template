@@ -8,10 +8,10 @@
     "target": "es5",
     "jsx": "react",
     "strictNullChecks": true,
-    "allowJs": true,
+    "allowJs": false,
     "alwaysStrict": true,
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["./src/"]
+  "include": ["./src/", "*.js" /*js files in the project root*/]
 }

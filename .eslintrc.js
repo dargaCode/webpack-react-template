@@ -1,4 +1,3 @@
-const path = require("path");
 const whitelistedWords = require("./spellcheck.whitelist.js");
 
 module.exports = {
@@ -8,10 +7,21 @@ module.exports = {
     "prettier/react",
     "plugin:react/recommended", // Uses the recommended rules from @eslint-plugin-react
     "plugin:@typescript-eslint/recommended", // Uses the recommended rules from the @typescript-eslint/eslint-plugin
+    "plugin:@typescript-eslint/recommended-requiring-type-checking", // slower but more powerful
     "prettier/@typescript-eslint", // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
     "plugin:prettier/recommended" // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
   plugins: ["react", "prettier", "spellcheck"],
+  parser: "@typescript-eslint/parser", // Specifies the ESLint parser
+  parserOptions: {
+    ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
+    sourceType: "module", // Allows for the use of imports
+    ecmaFeatures: {
+      jsx: true // Allows for the parsing of JSX
+    },
+    tsconfigRootDir: __dirname,
+    project: ["./tsconfig.json"]
+  },
   rules: {
     "prettier/prettier": "off", // don't complain about style, just silently fix it
     "react/jsx-filename-extension": [2, { extensions: [".jsx", ".tsx"] }], // disallow jsx in js or ts files
@@ -42,14 +52,6 @@ module.exports = {
         skipWords: whitelistedWords
       }
     ]
-  },
-  parser: "@typescript-eslint/parser", // Specifies the ESLint parser
-  parserOptions: {
-    ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
-    sourceType: "module", // Allows for the use of imports
-    ecmaFeatures: {
-      jsx: true // Allows for the parsing of JSX
-    }
   },
   env: {
     browser: true,
