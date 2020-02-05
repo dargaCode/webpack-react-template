@@ -5,7 +5,7 @@ interface Props {
   framework: string;
 }
 
-export default function HelloTypeScript(props: Props) {
+export default function HelloTypeScript(props: Props): JSX.Element {
   const { compiler, framework } = props;
 
   return (

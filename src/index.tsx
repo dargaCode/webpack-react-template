@@ -5,7 +5,7 @@ import icon from "./icon.png";
 import HelloWorld from "./components/HelloWorld";
 import HelloTypeScript from "./components/HelloTypeScript";
 
-function App() {
+function App(): JSX.Element {
   return (
     <div>
       <HelloWorld descriptor="Webpack" />

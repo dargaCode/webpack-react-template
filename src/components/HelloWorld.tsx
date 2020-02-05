@@ -9,7 +9,7 @@ function sum(numA: number, numB: number): string {
   return `the sum is ${numA + numB}!`;
 }
 
-export default function HelloWorld(props: Props) {
+export default function HelloWorld(props: Props): JSX.Element {
   const { descriptor } = props;
 
   const mySum = sum(10, 22);
