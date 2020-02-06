@@ -21,3 +21,25 @@ h2 {
   color: $headline-color;
   font-size: $h2-size;
 }
+
+nav {
+  background-color: royalblue;
+  li {
+    display: inline-block;
+    list-style-type: none;
+    a {
+      display: block;
+      padding: 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    :hover {
+      background-color: cornflowerblue;
+    }
+
+    .activeNavSection {
+      background-color: midnightblue;
+    }
+  }
+}
