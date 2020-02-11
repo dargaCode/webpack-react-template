@@ -47,7 +47,8 @@ module.exports = {
       eslint: false
     }),
     new HtmlWebpackPlugin({
-      title: "Webpack/React Template"
+      title: "Webpack/React Template",
+      template: "src/template.html"
     }),
     new HtmlWebpackRootPlugin(),
     new MiniCssExtractPlugin()
