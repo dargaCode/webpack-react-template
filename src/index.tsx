@@ -8,8 +8,11 @@ import HelloWorld from "./components/HelloWorld";
 import HelloTypeScript from "./components/HelloTypeScript";
 
 function App(): JSX.Element {
+  const projectPath =
+    process.env.NODE_ENV === "production" ? "/webpack-react-template/" : "/";
+
   return (
-    <Router>
+    <Router basename={projectPath}>
       <div>
         <header>
           <NavigationBar />
