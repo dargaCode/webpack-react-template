@@ -1,14 +1,19 @@
-const path = require("path");
-const custom = require("../webpack.dev.js");
-
 module.exports = {
-  stories: ["../src/**/*.stories.jsx"],
-  addons: ["@storybook/addon-actions", "@storybook/addon-links"],
-
-  webpackFinal: config => {
-    return {
-      ...config,
-      module: { ...config.module, rules: custom.module.rules }
-    };
+  stories: ["../src/**/*.stories.tsx"],
+  addons: [
+    "@storybook/addon-actions/register",
+    "@storybook/addon-links/register"
+  ],
+  webpackFinal: async config => {
+    config.module.rules.push({
+      test: /\.(ts|tsx)$/,
+      use: [
+        {
+          loader: require.resolve("ts-loader")
+        }
+      ]
+    });
+    config.resolve.extensions.push(".ts", ".tsx");
+    return config;
   }
 };
