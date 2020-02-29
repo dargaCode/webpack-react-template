@@ -1,6 +1,4 @@
 import React from "react";
-import { Button } from "@storybook/react/demo";
-import { action } from "@storybook/addon-actions";
 import HelloTypeScript from "./HelloTypeScript";
 
 export default {
@@ -8,16 +6,6 @@ export default {
   component: HelloTypeScript
 };
 
-export const Text = () => <HelloTypeScript compiler="hi" framework="loren" />;
-
-export const Emoji = () => (
-  <Button onClick={action("clicked")}>
-    <span role="img" aria-label="so cool">
-      😀 😎 👍 💯
-    </span>
-  </Button>
+export const Text = () => (
+  <HelloTypeScript compiler="storybook" framework="typescript" />
 );
-
-Emoji.story = {
-  name: "with emoji"
-};
