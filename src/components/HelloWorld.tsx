@@ -1,5 +1,7 @@
 import React from "react";
 import { join } from "lodash";
+import "./_general.scss";
+import "./_HelloWorld.scss";
 
 interface Props {
   descriptor: string;

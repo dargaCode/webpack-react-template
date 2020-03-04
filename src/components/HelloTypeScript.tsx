@@ -1,4 +1,6 @@
 import React from "react";
+import "./_general.scss";
+
 
 interface Props {
   compiler: string;
