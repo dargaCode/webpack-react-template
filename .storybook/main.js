@@ -1,5 +1,5 @@
 module.exports = {
-  stories: ["../src/components/*.stories.jsx"],
+  stories: ["../src/components/**/*.stories.jsx"],
   addons: [
     "@storybook/addon-actions/register",
     "@storybook/addon-links/register"
@@ -12,6 +12,10 @@ module.exports = {
           loader: require.resolve("ts-loader")
         }
       ]
+    });
+    config.module.rules.push({
+      test: /\.scss$/,
+      use: ["style-loader", "css-loader", "sass-loader"]
     });
     config.resolve.extensions.push(".ts", ".tsx");
     return config;
