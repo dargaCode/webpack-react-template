@@ -6,6 +6,6 @@ export default {
   component: HelloTypeScript
 };
 
-export const Text = () => (
+export const Basic = () => (
   <HelloTypeScript compiler="storybook" framework="typescript" />
 );
