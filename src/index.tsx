@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "./main.scss";
 import icon from "./icon.png";
 import NavigationBar from "./components/NavigationBar";
 import HelloWorld from "./components/HelloWorld";
