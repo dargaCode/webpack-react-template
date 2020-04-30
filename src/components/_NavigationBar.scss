@@ -1,14 +1,16 @@
-@import "general";
+@import 'general';
 
 nav {
   background-color: $nav-background-color;
+
   li {
     display: inline-block;
     list-style-type: none;
+
     a {
+      color: $nav-color;
       display: block;
       padding: 20px;
-      color: $nav-color;
       text-decoration: none;
     }
 
