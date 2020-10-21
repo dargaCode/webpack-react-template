@@ -3,6 +3,7 @@ const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackRootPlugin = require("html-webpack-root-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const MomentLocalesWebpackPlugin = require("moment-locales-webpack-plugin");
@@ -66,6 +67,9 @@ module.exports = {
     ]
   },
   plugins: [
+    new CopyPlugin({
+      patterns: [{ from: "src/img/favicons", to: "img/favicons" }]
+    }),
     new CleanWebpackPlugin(),
     new ForkTsCheckerWebpackPlugin({
       eslint: false
