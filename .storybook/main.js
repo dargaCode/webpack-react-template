@@ -1,23 +1,19 @@
 module.exports = {
-  stories: ["../src/components/**/*.stories.jsx"],
+  stories: ["../src/components/**/*.stories.tsx"],
   addons: [
-    "@storybook/addon-actions/register",
-    "@storybook/addon-links/register"
-  ],
-  webpackFinal: async config => {
-    config.module.rules.push({
-      test: /\.(ts|tsx)$/,
-      use: [
-        {
-          loader: require.resolve("ts-loader")
+    {
+      name: "@storybook/preset-scss",
+      options: {
+        cssLoaderOptions: {
+          modules: {
+            localIdentName: "[name]__[local]--[hash:base64:5]"
+          },
+          localsConvention: "dashesOnly"
         }
-      ]
-    });
-    config.module.rules.push({
-      test: /\.scss$/,
-      use: ["style-loader", "css-loader", "sass-loader"]
-    });
-    config.resolve.extensions.push(".ts", ".tsx");
-    return config;
-  }
+      }
+    },
+    "@storybook/preset-typescript",
+    "@storybook/addon-knobs/register",
+    "@storybook/addon-actions/register"
+  ]
 };
