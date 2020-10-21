@@ -7,6 +7,7 @@ import HelloWorld from "./components/HelloWorld";
 import HelloTypeScript from "./components/HelloTypeScript";
 
 function App(): JSX.Element {
+  // required when hosting the app on a sub-directory of a domain rather than top-level
   const projectPath =
     process.env.NODE_ENV === "production" ? "/webpack-react-template/" : "/";
 
