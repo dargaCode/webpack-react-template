@@ -5,6 +5,7 @@ const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackRootPlugin = require("html-webpack-root-plugin");
+// const CnameWebpackPlugin = require("cname-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const MomentLocalesWebpackPlugin = require("moment-locales-webpack-plugin");
 
@@ -78,6 +79,10 @@ module.exports = {
       template: "src/template.html"
     }),
     new HtmlWebpackRootPlugin(),
+    // only want a cname when hosting the app on its own domain
+    // new CnameWebpackPlugin({
+    //   domain: "dargacode.com"
+    // }),
     new MiniCssExtractPlugin(),
     new MomentLocalesWebpackPlugin()
   ]
