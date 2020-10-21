@@ -75,7 +75,6 @@ module.exports = {
       eslint: false
     }),
     new HtmlWebpackPlugin({
-      title: "Darga Webpack Template",
       template: "src/template.html"
     }),
     new HtmlWebpackRootPlugin(),
