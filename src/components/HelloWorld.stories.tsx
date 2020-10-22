@@ -6,4 +6,4 @@ export default {
   component: HelloWorld
 };
 
-export const Basic = () => <HelloWorld descriptor="Storybook" />;
+export const Basic = (): JSX.Element => <HelloWorld descriptor="Storybook" />;
