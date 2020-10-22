@@ -1,10 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import icon from "./icon.png";
-import NavigationBar from "./components/NavigationBar";
-import HelloWorld from "./components/HelloWorld";
-import HelloTypeScript from "./components/HelloTypeScript";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
+import NavigationBar from "./components/navigation/NavigationBar";
+import AboutSection from "./components/about/AboutSection";
+import SkillsSectionContainer from "./components/skills/SkillsSectionContainer";
+import ProjectsSection from "./components/projects/ProjectsSection";
+import ResumeSection from "./components/resume/ResumeSection";
+import ContactSection from "./components/contact/ContactSection";
 
 function App(): JSX.Element {
   // required when hosting the app on a sub-directory of a domain rather than top-level
@@ -13,32 +20,26 @@ function App(): JSX.Element {
 
   return (
     <Router basename={projectPath}>
-      <div>
+      <div className="router-container">
+        <div id="nocontent">
+          {/* ignored by google */}
+          <h1 className="invisible-but-outline-readable">
+            dargaCode - Darga Darga Programmer Portfolio
+          </h1>
+        </div>
         <header>
           <NavigationBar />
         </header>
+
         <Switch>
-          <Route path="/home">
-            <div>
-              <h1>Home</h1>
-            </div>
-          </Route>
+          <Route path="/about" component={AboutSection} />
+          <Route path="/skills" component={SkillsSectionContainer} />
+          <Route path="/projects" component={ProjectsSection} />
+          <Route path="/resume" component={ResumeSection} />
+          <Route path="/contact" component={ContactSection} />
 
-          <Route path="/about">
-            <div>
-              <h1>About</h1>
-            </div>
-          </Route>
-
-          <Route path="/">
-            <div>
-              <h1>Default Route</h1>
-            </div>
-          </Route>
+          <Redirect from="/" to="about" />
         </Switch>
-        <HelloWorld descriptor="Webpack" />
-        <HelloTypeScript compiler="TypeScript" framework="React" />
-        <img src={icon} alt="a desert at night" />
       </div>
     </Router>
   );
