@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { classSelector } from "../../utils/jestUtils";
+import { classSelector } from "../../utils/testUtils";
 import styles from "./Loading.module.scss";
 import Loading from "./Loading";
 
