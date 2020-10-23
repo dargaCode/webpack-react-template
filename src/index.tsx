@@ -9,9 +9,6 @@ import {
 import NavigationBar from "./components/navigation/NavigationBar";
 import AboutSection from "./components/about/AboutSection";
 import SkillsSectionContainer from "./components/skills/SkillsSectionContainer";
-import ProjectsSection from "./components/projects/ProjectsSection";
-import ResumeSection from "./components/resume/ResumeSection";
-import ContactSection from "./components/contact/ContactSection";
 
 function App(): JSX.Element {
   // required when hosting the app on a sub-directory of a domain rather than top-level
@@ -34,9 +31,6 @@ function App(): JSX.Element {
         <Switch>
           <Route path="/about" component={AboutSection} />
           <Route path="/skills" component={SkillsSectionContainer} />
-          <Route path="/projects" component={ProjectsSection} />
-          <Route path="/resume" component={ResumeSection} />
-          <Route path="/contact" component={ContactSection} />
 
           <Redirect from="/" to="about" />
         </Switch>
