@@ -11,32 +11,16 @@ export default function NavigationBar(): JSX.Element {
         <h2 className={styles.invisibleButOutlineReadable}>Navigation</h2>
       </div>
       <div className={styles.container}>
-        <NavLink to="/about" activeClassName="activeNavSection">
-          <div className={styles.about}>Hi, I&apos;m Darga.</div>
-        </NavLink>
-
         <ul>
           <li className={styles.button}>
-            <NavLink to="/skills" activeClassName="activeNavSection">
-              Skills
+            <NavLink to="/hello" activeClassName="activeNavSection">
+              Hello
             </NavLink>
           </li>
 
           <li className={styles.button}>
-            <NavLink to="/projects" activeClassName="activeNavSection">
-              Projects
-            </NavLink>
-          </li>
-
-          <li className={styles.button}>
-            <NavLink to="/resume" activeClassName="activeNavSection">
-              Resume
-            </NavLink>
-          </li>
-
-          <li className={styles.button}>
-            <NavLink to="/contact" activeClassName="activeNavSection">
-              Contact
+            <NavLink to="/world" activeClassName="activeNavSection">
+              World
             </NavLink>
           </li>
         </ul>

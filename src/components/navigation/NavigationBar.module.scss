@@ -35,25 +35,11 @@
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 0;
 
   @include break.under(medium) {
     flex-direction: column;
-  }
-}
-
-.about {
-  color: config.$nav-bar-logo-text-color;
-  font-weight: 700;
-  padding: 15px 0;
-
-  @include break.under(medium) {
-    padding: 8px 0 0;
-  }
-
-  &:hover {
-    color: config.$nav-bar-logo-hover-text-color;
   }
 }
 

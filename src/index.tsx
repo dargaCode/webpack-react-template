@@ -29,10 +29,10 @@ function App(): JSX.Element {
         </header>
 
         <Switch>
-          <Route path="/about" component={AboutSection} />
-          <Route path="/skills" component={SkillsSectionContainer} />
+          <Route path="/hello" component={AboutSection} />
+          <Route path="/world" component={SkillsSectionContainer} />
 
-          <Redirect from="/" to="about" />
+          <Redirect from="/" to="hello" />
         </Switch>
       </div>
     </Router>
