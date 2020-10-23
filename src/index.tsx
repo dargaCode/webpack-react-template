@@ -21,7 +21,7 @@ function App(): JSX.Element {
         <div id="nocontent">
           {/* ignored by google */}
           <h1 className="invisible-but-outline-readable">
-            dargaCode - Darga Darga Programmer Portfolio
+            Darga Webpack/React Template
           </h1>
         </div>
         <header>
