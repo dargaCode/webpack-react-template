@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import cloneDeep from "clone-deep";
 import { startCase } from "lodash";
-import { classSelector } from "../../utils/jestUtils";
+import { classSelector } from "../../utils/testUtils";
 import { getTimeSinceCommit } from "./repoUtils";
 import SkillCard from "./SkillCard";
 import { MOCK_SKILLS } from "./mockSkills";
