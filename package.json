@@ -1,6 +1,7 @@
 {
   "name": "darga-webpack-react-template",
   "version": "1.0.0",
+  "packageManager": "yarn@3.2.1",
   "private": true,
   "scripts": {
     "build": "webpack --config webpack.prod.js",
