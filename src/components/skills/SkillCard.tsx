@@ -32,7 +32,7 @@ SkillCard.propTypes = {
     name: PropTypes.string.isRequired,
     displayName: PropTypes.string.isRequired,
     repoCount: PropTypes.number.isRequired,
-    lastCommitTime: reactMomentPropTypes.momentObject,
+    lastCommitTime: reactMomentPropTypes.momentObj,
     timeSinceCommit: PropTypes.string
   }).isRequired
 };
