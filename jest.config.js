@@ -1,4 +1,6 @@
 module.exports = {
+  testEnvironment: "jest-environment-jsdom",
+  testEnvironmentOptions: {},
   testMatch: ["**/?(*.)+(test.(ts|tsx))"],
   setupFilesAfterEnv: ["<rootDir>/.jest/setupTests.ts"],
   moduleNameMapper: {

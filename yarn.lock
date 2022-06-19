@@ -7385,6 +7385,7 @@ __metadata:
     husky: ^4.0.1
     identity-obj-proxy: ^3.0.0
     jest: ^26.0.1
+    jest-environment-jsdom: ^26.0.1
     jest-transform-css: ^2.0.0
     lint-staged: ^9.5.0
     lodash: ^4.17.15
@@ -12141,7 +12142,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-environment-jsdom@npm:^26.6.2":
+"jest-environment-jsdom@npm:^26.0.1, jest-environment-jsdom@npm:^26.6.2":
   version: 26.6.2
   resolution: "jest-environment-jsdom@npm:26.6.2"
   dependencies:
