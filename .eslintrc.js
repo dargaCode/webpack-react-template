@@ -9,6 +9,11 @@ module.exports = {
     "plugin:css-modules/recommended",
     "plugin:jest/style",
     "plugin:jest/recommended",
+    "plugin:json/recommended",
+    "plugin:markdown/recommended",
+    "plugin:promise/recommended",
+    "plugin:security/recommended",
+    "plugin:storybook/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking", // slower but more powerful
     "prettier/@typescript-eslint", // disable eslint rules which conflict with prettier
