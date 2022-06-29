@@ -30,8 +30,8 @@ describe.skip("`SkillsSectionContainer`", () => {
       <SkillsSectionContainer rawSkills={MOCK_RAW_SKILLS} />
     );
 
-    wrapper
-      .instance()
+      (wrapper
+      .instance() as SkillsSectionContainer)
       .componentDidMount()
       .then(() => {
         // expect(axios.get).toHaveBeenCalledTimes(1);
