@@ -59,6 +59,7 @@ module.exports = {
     "react/require-default-props": [2, { forbidDefaultForRequired: true }],
     "react/default-props-match-prop-types": [2],
     "react/static-property-placement": "off",
+    "@typescript-eslint/no-loss-of-precision": "off",
     "no-plusplus": [2, { allowForLoopAfterthoughts: true }],
     "capitalized-comments": [1, "never", { ignorePattern: "TODO" }],
     "spellcheck/spell-checker": [
