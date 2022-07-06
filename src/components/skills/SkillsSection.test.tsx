@@ -107,7 +107,7 @@ describe("`SkillsSection`", () => {
 
       (wrapper.instance() as SkillsSection).handleSort(getFakeEventWithValue("Skill Name"));
 
-      const comparator: SkillSortComparator = wrapper.state("sortComparator");
+      const comparator: SkillSortComparator = wrapper.state("sortComparator") as SkillSortComparator;
 
       expect(comparator).toEqual(nameSkillComparator);
     });
@@ -119,7 +119,7 @@ describe("`SkillsSection`", () => {
       (wrapper.instance() as SkillsSection).handleSort(getFakeEventWithValue("Name"));
       (wrapper.instance() as SkillsSection).handleSort(getFakeEventWithValue("Recency"));
 
-      const comparator: SkillSortComparator = wrapper.state("sortComparator");
+      const comparator: SkillSortComparator = wrapper.state("sortComparator") as SkillSortComparator;
 
       expect(comparator).toEqual(commitRecencySkillComparator);
     });
