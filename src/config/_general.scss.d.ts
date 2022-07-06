@@ -1,3 +1,11 @@
-export const container: string;
-export const contentSection: string;
-export const invisibleButOutlineReadable: string;
+export type Styles = {
+  container: string;
+  contentSection: string;
+  invisibleButOutlineReadable: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

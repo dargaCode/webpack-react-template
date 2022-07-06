@@ -1,5 +1,13 @@
-export const container: string;
-export const contentSection: string;
-export const invisibleButOutlineReadable: string;
-export const loadingMessage: string;
-export const loadingOverlay: string;
+export type Styles = {
+  container: string;
+  contentSection: string;
+  invisibleButOutlineReadable: string;
+  loadingMessage: string;
+  loadingOverlay: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

@@ -1,5 +1,13 @@
-export const bar: string;
-export const button: string;
-export const container: string;
-export const contentSection: string;
-export const invisibleButOutlineReadable: string;
+export type Styles = {
+  bar: string;
+  button: string;
+  container: string;
+  contentSection: string;
+  invisibleButOutlineReadable: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

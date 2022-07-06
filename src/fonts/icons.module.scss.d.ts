@@ -1,19 +1,27 @@
-export const iconC: string;
-export const iconCss: string;
-export const iconDocx: string;
-export const iconEnvelope: string;
-export const iconExpress: string;
-export const iconGit: string;
-export const iconGithub: string;
-export const iconGlobe: string;
-export const iconHtml: string;
-export const iconJavascript: string;
-export const iconJest: string;
-export const iconLinkedin: string;
-export const iconNodejs: string;
-export const iconPdf: string;
-export const iconReact: string;
-export const iconRss: string;
-export const iconScss: string;
-export const iconStorybook: string;
-export const iconTypescript: string;
+export type Styles = {
+  iconC: string;
+  iconCss: string;
+  iconDocx: string;
+  iconEnvelope: string;
+  iconExpress: string;
+  iconGit: string;
+  iconGithub: string;
+  iconGlobe: string;
+  iconHtml: string;
+  iconJavascript: string;
+  iconJest: string;
+  iconLinkedin: string;
+  iconNodejs: string;
+  iconPdf: string;
+  iconReact: string;
+  iconRss: string;
+  iconScss: string;
+  iconStorybook: string;
+  iconTypescript: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

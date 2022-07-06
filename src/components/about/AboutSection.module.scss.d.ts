@@ -1,7 +1,15 @@
-export const container: string;
-export const contentSection: string;
-export const darga: string;
-export const invisibleButOutlineReadable: string;
-export const logo: string;
-export const overlay: string;
-export const subtitle: string;
+export type Styles = {
+  container: string;
+  contentSection: string;
+  darga: string;
+  invisibleButOutlineReadable: string;
+  logo: string;
+  overlay: string;
+  subtitle: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

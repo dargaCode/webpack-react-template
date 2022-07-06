@@ -1,7 +1,15 @@
-export const card: string;
-export const container: string;
-export const contentSection: string;
-export const invisibleButOutlineReadable: string;
-export const name: string;
-export const repoCount: string;
-export const timeSinceCommit: string;
+export type Styles = {
+  card: string;
+  container: string;
+  contentSection: string;
+  invisibleButOutlineReadable: string;
+  name: string;
+  repoCount: string;
+  timeSinceCommit: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;
