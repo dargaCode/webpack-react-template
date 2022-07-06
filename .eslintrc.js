@@ -19,7 +19,7 @@ module.exports = {
     "prettier/@typescript-eslint", // disable eslint rules which conflict with prettier
     "plugin:prettier/recommended" // enables eslint-plugin-prettier and eslint-config-prettier. this will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
-  plugins: ["react", "css-modules", "prettier", "spellcheck"],
+  plugins: ["react", "css-modules", "prettier", "promise", "spellcheck"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 2018,
