@@ -95,9 +95,9 @@ describe("`SkillsSection`", () => {
     it("can sort skills by `repoCount`", () => {
       const wrapper = shallow<SkillsSection>(<SkillsSection {...props} />);
 
-      wrapper.instance().handleSort(getFakeEventWithValue("Repo Count"));
+      (wrapper.instance() as SkillsSection).handleSort(getFakeEventWithValue("Repo Count"));
 
-      const comparator: SkillSortComparator = wrapper.state("sortComparator");
+      const comparator: SkillSortComparator = (wrapper.state("sortComparator") as SkillSortComparator);
 
       expect(comparator).toEqual(repoCountComparator);
     });
@@ -105,9 +105,9 @@ describe("`SkillsSection`", () => {
     it("can sort skills by `name`", () => {
       const wrapper = shallow<SkillsSection>(<SkillsSection {...props} />);
 
-      wrapper.instance().handleSort(getFakeEventWithValue("Skill Name"));
+      (wrapper.instance() as SkillsSection).handleSort(getFakeEventWithValue("Skill Name"));
 
-      const comparator: SkillSortComparator = wrapper.state("sortComparator");
+      const comparator: SkillSortComparator = wrapper.state("sortComparator") as SkillSortComparator;
 
       expect(comparator).toEqual(nameSkillComparator);
     });
@@ -116,10 +116,10 @@ describe("`SkillsSection`", () => {
       const wrapper = shallow<SkillsSection>(<SkillsSection {...props} />);
 
       // sort away from initial sort, to sort back again
-      wrapper.instance().handleSort(getFakeEventWithValue("Name"));
-      wrapper.instance().handleSort(getFakeEventWithValue("Recency"));
+      (wrapper.instance() as SkillsSection).handleSort(getFakeEventWithValue("Name"));
+      (wrapper.instance() as SkillsSection).handleSort(getFakeEventWithValue("Recency"));
 
-      const comparator: SkillSortComparator = wrapper.state("sortComparator");
+      const comparator: SkillSortComparator = wrapper.state("sortComparator") as SkillSortComparator;
 
       expect(comparator).toEqual(commitRecencySkillComparator);
     });

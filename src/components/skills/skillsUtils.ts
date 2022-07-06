@@ -2,10 +2,6 @@ import moment from "moment";
 
 export const SKILL_URL_PREFIX = `https://github.com/dargaCode?tab=repositories&q=topic%3A`;
 
-export interface SkillSortComparator {
-  (a: Skill, b: Skill): number;
-}
-
 export interface RawSkill {
   name: string;
   displayName: string;
@@ -16,6 +12,10 @@ export interface Skill extends RawSkill {
   repoCount: number;
   lastCommitTime: moment.Moment;
   timeSinceCommit: string;
+}
+
+export interface SkillSortComparator {
+  (a: Skill, b: Skill): number;
 }
 
 // used for tests, and when waiting for data to load

@@ -98,6 +98,7 @@ module.exports = [
   "src",
   "str",
   "strs",
+  "subdirectory",
   "svg",
   "timeline",
   "tmp",

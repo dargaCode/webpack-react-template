@@ -94,17 +94,17 @@ export default class SkillsSectionContainer extends React.Component<
 
   async fetchRepos(): Promise<void> {
     try {
-      const response = await Axios({
+      const response: { data: Repo[] } = await Axios({
         ...GITHUB_REPOS_REQUEST_CONFIG,
         cancelToken: this.axiosCancelSource.token
       });
-      const { data } = response;
+      const { data }: { data: Repo[] } = response;
       const { rawSkills } = this.props;
       const skills = processSkills(rawSkills, data);
 
       this.setState({ loading: false, skills });
     } catch (err) {
-      if (err.response) {
+      if (Axios.isAxiosError(err) && err.response) {
         const { status, statusText } = err.response;
 
         this.setState({
