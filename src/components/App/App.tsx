@@ -6,9 +6,9 @@ import {
   Route,
   Redirect
 } from "react-router-dom";
-import NavigationBar from "./components/navigation/NavigationBar";
-import AboutSection from "./components/about/AboutSection";
-import SkillsSectionContainer from "./components/skills/SkillsSectionContainer";
+import NavigationBar from "../navigation/NavigationBar";
+import AboutSection from "../about/AboutSection";
+import SkillsSectionContainer from "../skills/SkillsSectionContainer";
 
 function App(): JSX.Element {
   // required when hosting the app on a subdirectory of a domain rather than top-level
