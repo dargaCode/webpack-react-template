@@ -6,9 +6,13 @@ import {
   Route,
   Redirect
 } from "react-router-dom";
+import { Provider } from 'react-redux';
+import store from "../../app/store";
+
 import NavigationBar from "../navigation/NavigationBar";
 import AboutSection from "../about/AboutSection";
 import SkillsSectionContainer from "../skills/SkillsSectionContainer";
+import {Counter} from "../counter/Counter";
 
 function App(): JSX.Element {
   // required when hosting the app on a subdirectory of a domain rather than top-level
@@ -28,6 +32,7 @@ function App(): JSX.Element {
           <NavigationBar />
         </header>
 
+        <Counter />
         <Switch>
           <Route path="/hello" component={AboutSection} />
           <Route path="/world" component={SkillsSectionContainer} />
@@ -39,4 +44,9 @@ function App(): JSX.Element {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
